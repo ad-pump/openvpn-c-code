@@ -36,7 +36,7 @@
  * This version is extended to handle both / and \ in path names
  */
 char *
-basename(char *filename)
+mybasename(char *filename)
 {
     char *p = strrchr(filename, '/');
     if (!p)

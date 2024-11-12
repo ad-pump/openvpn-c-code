@@ -982,7 +982,7 @@ init_options_dev(struct options *options)
     if (!options->dev && options->dev_node)
     {
         char *dev_node = string_alloc(options->dev_node, NULL); /* POSIX basename() implementaions may modify its arguments */
-        options->dev = basename(dev_node);
+        options->dev = mybasename(dev_node);
     }
 }
 
